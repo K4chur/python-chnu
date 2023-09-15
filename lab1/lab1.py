@@ -3,9 +3,13 @@ import random
 
 
 def first():
-    m = int(input("Input m: "))
     n = int(input("Input n: "))
-    return (math.sqrt(2) + math.sqrt((3 * n))) / (2 * m)
+    m = int(input("Input m: "))
+
+    while m == 0:
+        m = int(input("Input number that is not zero: "))
+
+    return round((math.sqrt(2) + math.sqrt((3 * n))) / (2 * m),3)
 
 
 print(first())

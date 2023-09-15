@@ -10,7 +10,7 @@ def count_previous_occurrences(text):
         result.append(word_count[word])
         word_count[word] += 1
 
-    return result
+    return result, word_count
 
 
 input_text = """
@@ -22,6 +22,8 @@ I’m sure that the shells are sea shore shells.
 """
 
 
-result = count_previous_occurrences(input_text)
+result, word_count = count_previous_occurrences(input_text)
 for count in result:
     print(count, end=" ")
+
+print(word_count)

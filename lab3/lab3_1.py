@@ -1,6 +1,7 @@
 def is_symmetric(sequence):
     return sequence == sequence[::-1]
 
+
 def build_vector(matrix):
     n = len(matrix)
     vector = []
@@ -11,6 +12,7 @@ def build_vector(matrix):
             vector.append(row_number)
 
     return vector
+
 
 matrix = [
     [1, 2, 3, 3, 2, 1],
